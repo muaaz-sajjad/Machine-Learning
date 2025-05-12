@@ -1,0 +1,119 @@
+MLDLC (Machine Learning Development Life Cycle)
+9 to 10 different steps
+For real world end-to-end encrypted projects
+
+
+STEPS:
+1. Framing the Problem]
+- determine the nature of Problem
+- which type of Algorithm/Model is required
+- which type of learning is required (batch, online, instance etc.)
+
+2. Gathering the Date]
+- Normally we get data while university projects from Kaggle or some online resources
+- But for real world projects it is not the case, data could be very specific and difficult to Gather
+- There can be many sources of getting data in this case:
+a) CSV files (ease scene)
+b) API (writing Python script and fetching data via an API)
+c) Web Scrapping (different websites can be scrapped for getting data, you can run python script on it)
+d) Running Database (you cannot run python script on it because it is running database and may cause errors):
+       You make data warehouse in such a case
+       You then fetch data via ETL (Extract Transform Load) method from that warehouse
+e) Sometimes data can be found in tools like Spark in the form of clusters and you fetch data from clusters
+
+3. Date Pre-processing]
+- Normally the data you gathered or fetched in step 2 is very dirty and unclean, It may have:
+        Structural issues
+        outliers
+        missing data
+        noisy data
+        duplicate
+        uncompatible because data is coming from different sources (different number of coloumns and rows etc.)
+- The fetched data cannot be directly used in Machine learning Projects
+- So we need to do data Pre-processing (Making good changes in data before processing it in ML project)
+- Following can be steps in data pre-processing:
+        Removing duplicate
+        Removing missing data
+        Removing outliers
+        Scaling values (doing normalization, z-score normalization, and other types of normalization)
+- These steps make the data clean and readable and effortless for an ML Algorithm
+
+4. Exploratory Data Analysis (EDA)]
+- You try to analyze the data
+- You experiment with the data
+- You try to study the relationship between input and output data
+- Studying this relationship will tell you what you can do with your data
+- For example your input data can be length, place, area etc and output data can be price etc.
+- So you need to understand how the input is related to the output
+- These steps are very important because you are going to make a prediction, so the better you know the relationship between input and output, the better you will be able to make a prediction
+- Steps by which you can do ex data Analysis:
+         You do visualization (plot graphs with seaborn and matplotlib)
+         You do univariate analysis (single parameter/column), you study curve/trend etc.
+         You do bivariate analysis
+         You do multivariate analysis
+         You may also write code for outliers detection
+         You may convert imbalanced data into balanced data (For eg for image recognition model, uequal number of images of cats and dogs is imbalanced data, you may need to balance these both by augmentation (changing image angles etc) or any other method!)
+
+- You need to spend a lot of time on it! (if you need to cut a tree, you should spend more time on sharpening the blade, so that it cuts the tree in no time!)
+
+5. Feature Engineering & Feature Selection]
+Engineering)
+- A feature means a complete input column
+- You sometimes create more new features to better manipulate the data
+- You make some intelligent chnages in the data for better implementation of Algorithm
+- For example, instead of length and width of a house, Area is a much better feature
+Selection)
+- The more the number of columns, the more the time it will take to train your model
+- So, instead of going ahead into the Algorithm with so many number of columns (features), you may sometimes need to remove a few columns
+
+6. Model Training, Evaluation & Selection]
+Training)
+- Mostly you do not know which algorithm is best for your type of data
+- You train 4-5 Mostly used algorithms for that problem with your data, and then check the results
+- You may apply NN (Neural Network), Linear Model, Kernal Based Model, so in short you may bring algorithms from different families and try them out!
+- Whichever performs best, you pick that one 
+Evaluation)
+- You evaluate all the algorithms/models
+- There can be different methods to evaluate different models/algorithms
+         below are types of performance matrices
+         accuracy score for classification
+         mean square error for regression
+         Duns Index for clustering
+Selection)
+- You take one or multiple algorithms and there are parameters in each algorithm
+- You tune those parameters in these different algorithms (This is called as hyperparameter Tuning)
+- Ensemple Learning (Mostly single algorithm is not sufficient to solve a problem)
+        So you take several different algorithms
+        Combine them and make a new powerful method/algorithm
+        There are different techniques for this, namely begging, boosting, castading, stacking
+
+7. Model Deployment
+- You need to convert your model into a usable software for users
+- You actually make a binary file from your model (there are several tools for converting your file into a Binary file for eg pickl)
+- You take that binary file and convert it into an API 
+- API is a URL which if given correct input gives us JSON file/data in return
+
+8. Testing]
+- You give your software access to few loyal customers
+- They check it and give you a feedback
+- If feedback is good, and everything is okay you release the software to everyone
+- If there is some  error, you repeat all the previous steps (check data, check model/algorithm, check pre-processing or anything that you think might be causing issue)
+- A/B Testing is used for deciding to do all the steps in testing
+
+9. Optimizing]
+- You take backup of your model
+- You take backup of your data
+- So that in case model is attacked/destroyed it is easy for you to roll back
+- load balancing
+- How frequently model needs to be retrained
+- because as the time passes, the performance of model gets damaged because sometimes data is evolving, It is called as rotting
+- For example, you are making a mask detection program, and some new types of masks come in the market, this is data evolving
+- You need to automate these steps instead of doing it again and again by yourself!
+- This makes whole process perfect!
+
+
+
+
+
+
+

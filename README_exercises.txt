@@ -1,0 +1,11 @@
+exercise 1 = Calculate area of a rectangle (use typecasting, input, f-string and variable concepts)
+exercise 2 = Shopping Cart Program (use typecasting, input, f-string and variable concepts)
+exercise 3 = Madlibs game (use input, f-string and variable concepts)
+exercise 4 = Calculating circumference of a circle 2(pi)r --(Use built-in math module math.pi, typecasting, and f-string, and round())
+exercise 5 = Calculating the area of a circle (pi)r² --(Use built-in math module math.pi, typecasting, and f-string, and round() and pow(base, exponent))
+exercise 6 = Calculating Hypotenous of a right angle triangle (hyp)² = (base)² + (altitude)² --(Use math.sqrt() typecasting, and f-string, and round() and pow(base, exponent))
+exercise 7 = Making a calculator using "If Else" statements
+exercise 8 = Calculator Program (Use typecasting, algebraic operators, and multiple else if statements)
+exercise 9 = Python Weight Converter (Use multiple if else, typecasting concepts)
+exercise10 = Temperature Conversion Program (Use Typecasting, multiple if else concepts)
+exercise11 = Validate some user input (Use advanced string methods .isalpha, .isdigit, .find, also use len() function/method of python too, Make sure to use multpiple if else statement)
